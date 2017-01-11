@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+ <html lang="fr">
+  <head>
+   <meta charset="UTF-8"/>
+   <title></title>
+          <script>
+            var count=0;
+            var inter= setInterval(allumer, 500);
+function allumer() {
+  if (count==0){
+   document.getElementById('choco').src='http://www.iut-fbleau.fr/sitebp/web/wim11/js/on.png';
+  count=1;
+  }
+  else{
+              document.getElementById('choco').src='http://www.iut-fbleau.fr/sitebp/web/wim11/js/off.png';
+  count=0;         
+  }
+}  
+</script>
+  </head>
+   <body>
+    
+     <img id="choco" src="http://www.iut-fbleau.fr/sitebp/web/wim11/js/off.png" onclick="allumer(inter)"/>
+      <script>
+</script>
+   </body>
+</html>
