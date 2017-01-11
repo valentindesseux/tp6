@@ -1,34 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-<meta charset="UTF-8"/>
-     <title>let's go</title>
+
+<html>
+<head>
+    <title>Hello World!</title>
 <style>
-  div {
-    border: 2px solid black;
-    padding: 10px;
-    margin: auto;
-    width: 525px;
-    height: 550px;
-    display: block;
-  }
-  h3 {
-    text-align: center;
-  }
-     </style>   
-     <script >
-     function choco() {
-       alert("Entrez une couleur ?");
-      
-     }
+  #case {
+  width:300px;
+  height:300px;
+  border:1px solid #000000;
+}
+  </style>
+<script language="javascript">
+  function changerCouleur(){
+    var couleur = prompt("entrez une couleur ?", "#000");
+    if (couleur != null) {
+        document.getElementById("case").style .backgroundColor=couleur;
+    }
+}
+</script>
   
-     </script>
-  </head>
-       <body>
-         <h3>Cliquez dans la zone pour changer sa couleur</h3>
-         <div id="choco" onclick="choco()";>
-           
-         </div>
-        
-  </body>
+  <script language="javascript"></script>
+  
+</head>
+
+
+<body>
+
+  <p>
+    Cliquez sur la zone pour changer la couleur !
+  </p>
+  
+  <div id="case" onclick="changerCouleur();">
+
+  </div>
+  
+  
+
+</body>
 </html>
