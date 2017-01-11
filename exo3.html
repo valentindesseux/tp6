@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+   <meta charset="UTF-8"/>
+   <title></title>
+  <script>
+new Date(day, month, year) ;
+  function myFunction() {
+            var v = Date.parse("11 17, 1998");
+            var d = Date.parse("01 11, 2017");
+            var minutes = 1000 * 60;
+            var hours = minutes * 60;
+            var days = hours * 24;
+            var years = days * 365;
+            var y = Math.round(v / years);
+            var z = Math.round(d / years)-y;
+
+    document.getElementById("demo").innerHTML = z;
+}
+</script>
+  </head>
+<body>
+
+<p>Click the button to display the number of years between a specified date and November 17, 1998.</p>
+
+<button onclick="myFunction()">Votre age</button>
+
+<p id="demo"></p>
+<form>
+  <label for="date">Date de naissance</label> : <input type="date" name="date" id="date" required />
+  </form>
+
+
+</body>
+</html>
